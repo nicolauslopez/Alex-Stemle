@@ -4,7 +4,15 @@ into the {body} of the default.hbs template --}}
 
 {{!-- Main --}}
 <main id="main">
-    <p>this is a test</p>
+    <article class="post featured">
+        <header class="major">
+            <h2><a href="https://alexstemle.com/donate/">Donate</a></h2>
+            <p>Donate to the Alex Stemle for School Board Campaign Please</p>
+        </header>
+        <ul class="actions special">
+            <li><a href="https://alexstemle.com/donate/" class="button large">Donate</a></li>
+        </ul>
+    </article>
     {{!-- Featured Post --}}
     {{#is "home"}}
     {{#get "posts" filter="featured:true" limit="1" as |featured_post|}}
